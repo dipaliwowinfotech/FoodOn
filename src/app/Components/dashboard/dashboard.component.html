@@ -1,0 +1,174 @@
+<app-header></app-header>
+<app-sidebar></app-sidebar>
+<main id="main" class="main">
+
+  <section class="section" id="feature_dashboard">
+    <div class="row">
+      <div class="col-lg-12">
+        <!--find our location -->
+        <div class="find-location blue-bg">
+          <div class="container">
+            <div class="row">
+              <!-- <div class="col-lg-12 text-center">
+                <p> <i class="fas fa-map-marker-alt"></i>Find Our Location</p>
+              </div> -->
+            </div>
+          </div>
+        </div>
+        <!-- end find our location -->
+
+        <!-- google map section -->
+        <div class="embed-responsive embed-responsive-21by9">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26432.42324808999!2d-118.34398767954286!3d34.09378509738966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bf07045279bf%3A0xf67a9a6797bdfae4!2sHollywood%2C%20Los%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1576846473265!5m2!1sen!2sbd"
+            width="97%" height="100" frameborder="0" style="border:0; border-radius: 20px;" allowfullscreen=""
+            class="embed-responsive-item"></iframe>
+        </div>
+        <!--end google map section-->
+      </div>
+
+
+
+      <div class="row" id="product-tab">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="card mb-3">
+            <div class="card-body">
+              <div class="row">
+                <h4>Select Type</h4>
+                <div class="col-lg-4 col-md-4 co-sm-3 col-4">
+                  <div class="farm-prodct-icon-circle row">
+
+                    <div class=" col-lg-5 ">
+                      <input class="checkbox" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+
+                      <img src="assets/images/breakfastnew.png" class="img-fluid" >
+                    </div>
+                    <div class="col-lg-7 name">
+                      Breakfast
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 co-sm-3 col-4">
+                  <div class="farm-prodct-icon-circle row">
+                    <div class="col-lg-5">
+                      <input class="checkbox" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+
+                      <img src="assets/images/lunchnew.png" class="img-fluid" >
+                    </div>
+                    <div class="col-lg-7 name">
+                      Lunch
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 co-sm-3 col-4">
+                  <div class="farm-prodct-icon-circle row">
+                    <div class="col-lg-5">
+                      <input class="checkbox" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+
+                      <img src="assets/images/dinnernew.png" class="img-fluid" >
+                    </div>
+                    <div class="col-lg-7  name">
+                      Dinner
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+
+                <h4>Select Choice</h4>
+                <div class="col-lg-4 col-md-4 co-sm-3 col-4">
+                  <div class="farm-prodct-icon-circle row">
+                    <div class="col-lg-5">
+                      <input class="checkbox" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                      <img src="assets/images/veg.png" class="img-fluid" >
+                    </div>
+                    <div class="col-lg-7 name">
+                      Pure-Veg
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-4 co-sm-3 col-4">
+                  <div class="farm-prodct-icon-circle row">
+                    <div class="col-lg-5">
+                      <input class="checkbox" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                      <img src="assets/images/nonveg.png" class="img-fluid" >
+                    </div>
+                    <div class="col-lg-7 name">
+                      Non-Veg
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-4 co-sm-3 col-4">
+                  <div class="farm-prodct-icon-circle row">
+                    <div class="col-lg-5">
+                      <input class="checkbox" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                      <img src="assets/images/veg.png" class="img-fluid">
+                    </div>
+                    <div class="col-lg-5">
+                      <img style="margin-top: 23px;" src="assets/images/nonveg.png" class="img-fluid" >
+                    </div>
+                  </div>
+                </div>
+
+                <h4>Type</h4>
+                <div class="col-lg-4 col-md-4 co-sm-3 col-4">
+                  <div class="farm-prodct-icon-circle row">
+                    <div class="col-lg-5">
+                      <input class="checkbox" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                      <img src="assets/images/familyresto.webp" class="img-fluid">
+
+                    </div>
+                    <div class="col-lg-7 name">
+                      Family Restro
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 co-sm-3 col-4">
+                  <div class="farm-prodct-icon-circle row">
+                    <div class="col-lg-5">
+                      <input class="checkbox" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                      <img src="assets/images/bar.webp" class="img-fluid">
+                    </div>
+                    <div class="col-lg-7 name">
+                      Family Restro & Bar
+                    </div>
+                  </div>
+                </div>
+
+
+                <div>
+                  <app-detail-form></app-detail-form>
+                </div>
+
+
+              </div>
+            </div><!-- End Card with an image on left -->
+
+          </div>
+
+
+
+
+
+
+
+
+
+        </div><!-- End Card with an image on left -->
+
+
+      </div>
+    </div>
+  </section>
+</main>

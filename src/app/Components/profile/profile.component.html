@@ -1,0 +1,83 @@
+<main>
+    <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-7 col-md-7 d-xs-none">
+           <div class="col-xl-7 b-center bg-size">
+            <img class="bg-img-cover bg-center" src="assets/images/login-bg4.webp" alt="looginpage"></div>
+          </div>
+          <div class="col-lg-5 col-md-5 d-flex flex-column ">
+
+            <div class="d-flex justify-content-center">
+            <!--   <a href="index.html" class="login-logo d-flex align-items-center w-auto">
+                <img src="assets/img/logo.png" alt="">
+                <span class="d-none d-lg-block"><img src="images/logo.png" class="img-fluid" alt="Krushi doot logo"></span>
+              </a> -->
+            </div><!-- End Logo -->
+
+            <div class="card mt-10 mb-3">
+
+              <div class="card-body mr-t5 " id="login-form">
+
+                <div class="pt-4 pb-2">
+                  <h5 class="card-title text-center pb-0 fs-4">Profile</h5>
+                </div>
+
+                <form  [formGroup]="profileForm" class="row g-3 needs-validation" novalidate>
+
+                  <div class="col-12">
+                    <label for="yourUsername" class="form-label">USER_NAME</label>
+                    <div class="input-group has-validation">
+                      <input type="text" name="username" class="form-control login-input" id="yourUsername" required formControlName="USER_NAME" placeholder="Enter Your Name ">
+                      <div class="invalid-feedback">Please enter your Name.</div>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="yourUsername" class="form-label">Email-Id</label>
+                    <div class="input-group has-validation">
+                      <input type="text" name="username" class="form-control login-input" id="yourUsername" required formControlName="EMAIL_ID" placeholder="Enter Your Email-Id">
+                      <div class="invalid-feedback">Please enter your username.</div>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="yourUsername" class="form-label">MOBILE_NUMBER</label>
+                    <div class="input-group has-validation">
+                      <input type="text" name="username" class="form-control login-input" id="yourUsername" required formControlName="MOBILE_NUMBER" placeholder="Enter Your mobile_no">
+                      <div class="invalid-feedback">Please enter your username.</div>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="yourUsername" class="form-label">Address</label>
+                    <div class="input-group has-validation">
+                      <input type="text" name="username" class="form-control login-input" id="yourUsername" required formControlName="ADDRESS" placeholder="Enter Your Name ">
+                      <div class="invalid-feedback">Please enter your Name.</div>
+                    </div>
+                  </div>
+
+                  <!-- <div class="col-12">
+                    <label for="yourPassword" class="form-label">Password</label>
+                    <input type="password" name="password" class="form-control login-input" id="yourPassword" required>
+                    <div class="invalid-feedback">Please enter your password!</div>
+                  </div> -->
+
+                  
+                  <div class="col-12">
+                    <!-- <button class="btn btn-success text-center" type="submit">Login <i class="icon-right-arrow"></i></button> -->
+                    <a (click)="update()"  class="btn btn-success text-center">Profile Update</a>
+                  </div>
+                 
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+</main><!-- End #main -->
+

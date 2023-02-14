@@ -1,0 +1,39 @@
+<main>
+    <section class="section"
+        style="background:url(../assets/images/otp-bg9.jpg) no-repeat; background-size: cover; height: 100vh;">
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <div class="card py-4 px-2">
+                    <div>
+                        <!-- <h3 style="color:#d6a354; text-align: center;">OTP</h3> -->
+                        <p class="opt_c">Enter Your OTP</p>
+                        <p *ngIf="mobileNo" class="opt_c1"> <span>+91&nbsp;{{this.mobileNo.mobile_no}}</span></p>
+
+                        <ng-otp-input style="size: 10px;" class="otp_box " (onInputChange)="onOtpChange($event)"
+                            *ngIf="showOtpComponent" [config]="config">
+                        </ng-otp-input>
+                        <span>
+                            <div class=" otp_box1 text-danger mt-2" *ngIf="wrongOTP">please Enter Valid OTP</div>
+                        </span>
+                    </div>
+                    <span style="text-align: center; margin-top: 20px;">{{(timeLeft>0)? '00:'+ timeLeft: ''}}</span>
+                    <div class="otp_box1">
+                        <button type="button" class=" opt_c2 btn btn-success m-3 mr-3" (click)="resend()"
+                            *ngIf="showbutton && timeLeft == 0">Resend</button>
+
+
+                        <button routerLink="/firstpage" (click)="verify()" type="submit" class=" opt_c2 btn btn-success m-3 mr-3"
+                            >Confirm</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+    </section>
+</main><!-- End #main -->

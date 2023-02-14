@@ -1,0 +1,61 @@
+<main>
+  <section class="section register"
+    style="background:url(../assets/images/otp-bg8.jpg) no-repeat; background-size: cover; height: 100vh;">
+    <div class="container">
+      <div class="row justify-content-center">
+
+
+        <div class="col-lg-5 col-md-5 d-flex flex-column ">
+
+          <!-- <div class="">
+              <a href="index.html" class="login-logo d-flex align-items-center w-auto">
+                <img src="assets/img/logo.png" alt="">
+                <span class="d-none d-lg-block"><img src="images/logo.png" class="img-fluid" alt="Krushi doot logo"></span>
+              </a>
+          </div>           <--End Logo -->
+
+          <img src="assets/images/logo.png" alt="">
+          <!-- <span class="d-lg-none d-sm-none"><img src="assets/images/logo.png" class="img-fluid" alt=""></span> -->
+
+          <div class="card mt-5 mb-3">
+
+            <div class="card-body mr-t5 " id="login-form">
+
+              <div class="pt-4 pb-2">
+                <h5 class="card-title text-center pb-0 fs-4">Login to Your Account</h5>
+                <!-- <p class="text-center small">Welcome back! Log in to your account.</p> -->
+              </div>
+
+              <form [formGroup]="loginForm" class="row g-3 needs-validation" novalidate >
+
+                <div class="col-12">
+                  <label for="yourUsername" class="form-label">Mobile Number</label>
+                  <div class="input-group has-validation">
+                    <input type="text" maxlength="10" name="username" class="form-control login-input" formControlName="mobile_no" id="yourUsername" required placeholder="Enter Your Mobile Number">
+                    <div *ngIf="isSubmitted && loginForm.hasError('required','mobile_no')" style="display: block !important;" class="invalid-feedback">Mobile Number
+                      is required.</div>
+                      <div *ngIf="form['mobile_no'].errors?.['pattern']||form['mobile_no'].errors?.['minlength']" style="display: block !important;"  class="invalid-feedback"> Enter Valid Mobile Number.</div>
+                  </div>
+                </div>
+                  <!-- <div class="col-12">
+                    <label for="yourPassword" class="form-label">Password</label>
+                    <input type="password" name="password" class="form-control login-input" id="yourPassword" required>
+                    <div class="invalid-feedback">Please enter your password!</div>
+                  </div> -->
+
+
+                  <div class="col-12">
+                    <!-- <button class="btn btn-success text-center" type="submit">Login <i class="icon-right-arrow"></i></button> -->
+                    <a (click)="getotp()" class="btn btn-success text-center">GET OTP</a>
+                  </div>
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</main><!-- End #main -->
